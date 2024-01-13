@@ -27,7 +27,7 @@ fun ChatTopBar(user: User, onBackIconClick: () -> Unit) {
 
     Column {
         TopAppBar(
-            backgroundColor = colorTopBar(),
+            colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = colorTopBar(),
             navigationIcon = {
                 IconButton(onClick = {
                     onBackIconClick()
